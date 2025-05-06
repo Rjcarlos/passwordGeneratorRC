@@ -58,7 +58,7 @@ function generatePasswords(){
       }
 
       //secret code for my girlfriend
-    if(passlength.value == 28){
+    if(passlength.value == 26){
         passOne.textContent = "I love you my beautiful baby! 💖"
         passTwo.textContent = "Super proud of you my engineer! 👷‍♀️"
     } 
