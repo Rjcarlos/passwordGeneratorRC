@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Generate a </h1>
+            <h1 class="highlight">random password</h1>
+            <p>Never use an insecure password again. </p>
+            <div class="input">
+            <label>Password Length: </label> <input type="number" name="passLength" id="passLength"
+            value="15"/>
+            </div>
+            <div class="radioBtn">
+                <div >
+                    <label for="numbRadio">Numbers:</label>
+                    <div class="radioNumbers">
+                        <p>ON:</p>
+                        <input name="numbRadio"id= "numbOn" type="radio" value="on" checked/>
+                        <p>OFF:</p>
+                        <input name="numbRadio"id= "numbOff" type="radio" value="off" />
+                    </div>
+                </div>
+                <div >
+                    <label for="symbolsRadio">Symbols:</label>
+                    <div class="radioSymbols">
+                        <p>ON:</p>
+                        <input name="symbRadio"id= "symOn" type="radio" value="on" checked />
+
+                        <p>OFF:</p><input name="symbRadio"id= "symOff" type="radio" value="off" />
+                    </div>
+                </div>
+            </div>
+            <button class="button" id="generateBtn" onclick="generatePasswords()">Generate passwords</button>
+            <div class="passwordContainer">
+              <div class="passOneCont">
+                <p id="pass-one"></p>
+                <button class="copyBtn" id="copyBtnOne" onclick="copyBtnOneFunc()">📋</button>
+              </div>
+
+              <div class="passTwoCont">
+                <p id="pass-two"></p>
+                <button class="copyBtn" id="copyBtnTwo" onclick="copyBtnTwoFunc()">📋</button>
+              </div>
+            </div>
+
+        </div>
+    
+        <script src="index.js"></script>
+
+    </body>
+</html>
